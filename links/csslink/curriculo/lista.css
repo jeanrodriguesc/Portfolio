@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.meio {
+    width: 700px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #b5b7b9, darkcyan );    
+}
+
+.lista {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lista h2 {
+    position: relative;
+    color:#fff;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 5px;
+    padding-top: 200px;
+}
+
+.lista .coluna {
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+   
+    flex-direction: column;
+}
+
+.lista .coluna .bot {
+    position: relative;
+
+    color: #fff;
+    list-style: none;
+    margin: 4px 0;
+    border-left: 2px solid #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.lista .coluna .bot::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+.lista .coluna .bot:hover::before {
+    transform: scaleX(1);
+}
+
+.lista .coluna .bot:hover {
+    left: 2px;
+    color: black;
+    transition: 0s;
+}
+
+.lista .coluna .bot span {
+    position: relative;
+    padding: 8px;
+    display: inline-block;
+    z-index: 1;
+    transition: 0.5s;
+}

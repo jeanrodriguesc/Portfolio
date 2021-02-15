@@ -2,101 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Curriculo</title>
-    <link href="index.css" rel="stylesheet">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <h1 class="portf">Portfólio</h1> 
+    <header class="cima">
+        <a href="index.html" class="logo">Portfólio</a>
+        <ul class="navegacao">
+            <li class="head"><a class="cate">Inicio</a></li>
+            <li class="head"><a class="cate">Frontend</a></li>
+            <li class="head"><a class="cate">Backend</a></li>
+            <li class="head"><a class="cate">Jogos</a></li>
+            <li class="head"><a class="cate">Recentes</a></li>
+        </ul>
+        <div class="pesquisa">
+            <input class="pesq" type="text" placeholder="Pesquisa">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
     </header>
-
-    <div class="container">
-
-        <div class="box">
-            <span></span>
-            <div class="content">
-                <h2>Curriculo</h2>
-                <p>Voce conseguirá ver meu Curriculo</p>
-                <a href="links/curriculo.html"> Curriculo botao</a>
+       
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Curriculo</h3>
+                    <p>Voce conseguirá ver meu Curriculo</p>
+                        <a href=links/pages/curriculo.html>Ver Curriculo</a>
+                </div>
             </div>
-        </div>
-
-        <div class="box">
-            <span></span>
-            <div class="content">
-                <h2>Alguma coisa</h2>
-                <p>Nao sei ainda o que por </p>
-                <a href ='links/teste.html'> ?</a>
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Cadastro</h3>
+                    <p> Modelos de cadastros</p>
+                        <a href="links/pages/cadastro.html">Saiba mais</a>
+                </div>
             </div>
-        </div>
-
-        <div class="box">
-            <span></span>
-            <div class="content">
-                <h2>Alguma coisa</h2>
-                <p>Nao sei ainda o que por </p>
-                <a href ='links/teste.html'> ?</a>
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Cartão 3D</h3>
+                    <p>Estilo vidro nos cartão, Animação feita com Vanilla.js </p>
+                        <a href="links/pages/cartao3d.html">Card 3D</a>
+                </div>
             </div>
-        </div>
-
-        
-        <div class="box">
-            <span></span>
-            <div class="content">
-                <h2>Alguma coisa</h2>
-                <p>Nao sei ainda o que por </p>
-                <a href ='links/teste.html'> ?</a>
+            <div class="card">
+                <div class="content">
+                    <h2>04</h2>
+                    <h3>Alguma coisa</h3>
+                    <p>Nao sei ainda o que por</p>
+                        <a href="links/pages/teste.html">?</a>
+                </div>
             </div>
-        </div>
-
-        <div class="box">
-            <span></span>
-            <div class="content">
-                <h2>Alguma coisa</h2>
-                <p>Nao sei ainda o que por </p>
-                <a href ='links/teste.html'> ?</a>
+            <div class="card">
+                <div class="content">
+                    <h2>05</h2>
+                    <h3>Flappy</h3>
+                    <p>Jogo FlappyBird simples, usando 4 barreiras, fazendo loop infinito. Usando HTML, CSS e JS</p>
+                        <a href="http://localhost:8081">Flappy Bird</a>
+                </div>
             </div>
-        </div>
-
-        <div class="box">
-            <span></span>
-            <div class="content">
-                <h2>Alguma coisa</h2>
-                <p>Nao sei ainda o que por </p>
-                <a href ='links/teste.html'> ?</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <span></span>
-            <div class="content">
-                <h2>Alguma coisa</h2>
-                <p>Nao sei ainda o que por </p>
-                <a href ='links/teste.html'> ?</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <span></span>
-            <div class="content">
-                <h2>Alguma coisa</h2>
-                <p>Nao sei ainda o que por </p>
-                <a href ='links/teste.html'> ?</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <span></span>
-            <div class="content">
-                <h2>Flappy</h2>
-                <p>Jogo FlappyBird simples, usando 4 barreiras, fazendo loop infinito. Usando HTML, CSS e JS</p>
-                <a href ='http://localhost:8081'> Flappy Bird</a>
-            </div>
-        </div>
-
-    </div>
-    <footer>
-        Jean Rodriguess
-    </footer>
+        </div>   
+  
+    <script type="text/javascript" src="vanilla.js"></script>
+    <script>VanillaTilt.init(document.querySelectorAll(".card"),{
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+    })</script>
 </body>
 </html>

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #131419;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.container .box {
+    position: relative;
+    width: 320px;
+    height: 500px;
+    margin: 20px 30px;
+    box-shadow: -5px -5px 10px rgb(255,255,255,0.5),
+                5px 5px 15px rgb(0,0,0,0.5);
+}
+
+.form1 {
+    background-color: #131419;
+    width: 320px;
+    height: 500px;
+    font-family: consolas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+
+}
+
+.form1 .login1{
+    color: #c7c7c7;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.form1 .input1{
+    text-align: left;
+    margin-top: 40px;
+}
+
+.form1 .input1 .inputBox1 {
+    margin-top: 20px;
+}
+
+.form1 .input1 .inputBox1 .usuario1{
+    display: block;
+    color: #868686;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form1 .input1 .inputBox1 .inpt1 {
+    width: 90%;
+    height: 40px;
+    background: #131419;
+    border: none;
+    outline: none; 
+    border-radius: 40px;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 18px;
+    color: #03a9f4;
+    box-shadow: inset -2px -2px 6px rgb(255,255,255,0.1),
+                 inset  2px 2px 6px rgb(0,0,0,0.8); 
+}
+
+.form1 .input1 .inputBox1 .botao1 {
+    margin-top: 20px;
+    box-shadow:  -2px -2px 6px rgb(255,255,255,0.1),
+                 2px 2px 6px rgb(0,0,0,0.8); 
+}
+
+.form1 .input1 .inputBox1 .botao1:active {
+    color: #006c9c;
+    box-shadow: inset -2px -2px 6px rgb(255,255,255,0.1),
+                inset 2px 2px 6px rgb(0,0,0,0.8); 
+}
+
+.form1 .input1 .inputBox1 .botao1::placeholder{
+    color: #555;
+    font-size: 18px;
+}
+
+.esqueceu1{
+    margin-top: 30px;
+    color: #555 ;
+}
+
+.esqueceu1 .a1 {
+    color: #ff0047;
+}
