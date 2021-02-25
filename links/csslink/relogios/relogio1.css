@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    background: #161623;
+}
+
+
+
+.box {
+    width: 350px;
+    height: 450px;
+    margin: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.clock {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid springgreen;
+    border-radius: 10%;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: springgreen;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.hour, .min, .sec {
+    position: absolute;
+}
+
+.hour, .hr{
+    width: 130px;
+    height: 130px;
+}
+
+.min, .mn {
+    width: 160px;
+    height: 160px;
+}
+.sec, .sc {
+    width: 250px;
+    height: 200px;
+}
+
+.hr, .mn, .sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.hr::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 70px;
+    background: springgreen;
+    border-radius: 2px;
+}
+
+.mn::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 80px;
+    background: springgreen;
+    border-radius: 2px;
+}
+
+.sc::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100px;
+    background: springgreen;
+    border-radius: 2px;
+}
+
+#digitalClock {
+    display: flex;
+    color: springgreen;
+    font-size: 2em;
+    
+}
+
+#digitalClock1 {
+    display: flex;
+    color: springgreen;
+    font-size: 2em;
+    
+}
