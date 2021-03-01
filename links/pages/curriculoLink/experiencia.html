@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../header.css">
+    <link rel="stylesheet" href="../../csslink/curriculo/experiencia/pop.css">
+    <link rel="stylesheet" href="../../csslink/curriculo/experiencia/exp.css">
     <title>Experiência</title>
 </head>
 <body>
+    <header class="cima">
+        <a href="../../../index.html" class="logo">Portfólio</a>
+        <ul class="navegacao">
+            <li class="head"><a href="../../../index.html" class="cate">Inicio</a></li>
+            <li class="head"><a class="cate">Frontend</a></li>
+            <li class="head"><a class="cate">Backend</a></li>
+            <li class="head"><a class="cate">Jogos</a></li>
+            <li class="head"><a class="cate">Recentes</a></li>
+        </ul>
+        <div class="pesquisa">
+            <input class="pesq" type="text" placeholder="Pesquisa">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+
+
     
+    <div class="container" id="blur">
+
+        <div class="content">
+            <div class="lista">
+                <h2 class="alt">Empresas</h2>
+                <ul class="coluna">
+                    <li onclick="toggle()" class="bot"><span>Brl Vacinas</span></li>
+                    <li onclick="toggle2()" class="bot"><span>InfoCopy Center</span></li>
+                    <li onclick="toggle3()" class="bot"><span>Lider</span></li>
+                </ul>
+            </div>
+        </div> 
+
+    </div>    
+    <div id="popup">
+        <h2>Brl Vacinas</h2>
+        <h3>(Auxiliar de Logistica)</h3>
+        <p >Fui contratado por um tempo expecifico, para o setor de Logistica. Fiquei responsavel com a distribuição de vacinas por toda região Nordeste e Sul. Fazendo da melhor forma possivel para o cliente final. Já pensando em novas venda para o mesmo.</p>
+           
+            <a class="a" onclick="toggle()">X</a>
+    </div>
+    
+    <div id="social">
+        <h2>InfoCopy Center </h2>
+        <h3>(Atendente)</h3>
+        <p>Fui contratado por um tempo expecifico, para o setor de Logistica. Fiquei responsavel com a distribuição de vacinas por toda região Nordeste e Sul. Fazendo da melhor forma possivel para o cliente final. Já pensando em novas venda para o mesmo.</p>
+         
+        <a class="a" onclick="toggle2()">X</a>
+    </div>
+
+    <div id="habi">
+        <h2>Lider</h2>
+        <h3>(Auxiliar Administrativo)</h3>
+        <p>Ajudante no setor Financeiro, responsavel pelas transferencias, pagamentos, notas fiscais. Organizar planilhas e prencher o espelho para passar para o cliente.</p>
+        
+         
+        <a class="a" onclick="toggle3()">X</a>
+    </div>
+    
+   
+
+    <script src="../../jslink/curriculo/informacao.js"></script>
 </body>
 </html>
