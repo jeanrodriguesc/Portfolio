@@ -7,16 +7,19 @@ body{
 
 
 .alt{
-    margin-top: -100px;
-    padding: 80px ;
+    font-family: 'Akaya Telivigala', cursive;
 }
 
 .lista {
-    position: relative;
+    margin-top: -250px ;
+   
+
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .lista h2 {
@@ -24,16 +27,15 @@ body{
     color:#fff;
     font-weight: 1700;
     font-size: 140px;
-    letter-spacing: 10px;
-    padding-top: 40px;
+    letter-spacing: 20px;
 }
 
 .lista .coluna {
-    position: relative;
-    padding-top: 50px;
+    margin-top: 150px;
+    font-size: 25px;
+    
+
     display: flex;
-    justify-content: center;
-   
     flex-direction: row;
 }
 
@@ -42,7 +44,7 @@ body{
 
     color: #fff;
     list-style: none;
-    margin: 4px 0;
+    margin: 4px 0px;
     border-left: 2px solid #fff;
     transition: 0.5s;
     cursor: pointer;
@@ -77,3 +79,9 @@ body{
     z-index: 1;
     transition: 0.5s;
 }
+
+.fa{
+    
+    font-size: 104px;
+}
+
