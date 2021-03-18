@@ -28,22 +28,25 @@ form input, form button {
     font-size: 1rem;
     border: none;
     background: white;
+     outline: 0;  /* tirar a linha quando estiver selecionado */
 }
 
 form input{
     min-width: 35%;
+    border-radius: 10px 0 0 10px;
 }
 
 form button{
-    color: #d88771;
+    color: #7536FC  ;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 0 10px 10px 0;
 }
 
 form button:hover {
     color:white ;
-    background: #d88771;
+    background: #7536FC  ;
 }
 
 .todo-container{
@@ -85,7 +88,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn{
-    background: #ff6f47;
+    background: #7536FC ;
     color: white;
     border: none;
     padding: 0.7rem;
@@ -94,7 +97,7 @@ form button:hover {
 }
 
 .complete-btn{
-    background: rgb(73, 204, 73);
+    background: #B530F8;
 }
 
 .fa-check,

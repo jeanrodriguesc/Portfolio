@@ -24,12 +24,29 @@ function addTodo(event){
     todoDiv.classList.add("todo");
 
     //criando um LI
-
+    
+    
     const newTodo = document.createElement("li");
-    newTodo.innerText = `❝${todoInput.value}❞`;
+
+    
+    newTodo.innerText = aspas();
     newTodo.classList.add("todo-item");
     todoDiv.appendChild(newTodo);
 
+
+    // Fazer com que ele nao envie se o input estiver em branco  
+    // Valor do input  = todoInput.value
+    
+    function aspas(){
+        resu = todoInput.value
+        if (resu.length > 0){
+           return `❝${resu}❞`
+         } else{ 
+            return remove()
+           
+         }
+    }
+   
     //verificar o botao da marca
 
     const completedButton = document.createElement("button");
