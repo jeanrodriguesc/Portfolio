@@ -34,4 +34,5 @@ body{
                 0 6px  6px  rgba(0, 0, 0, 0.23);
     margin: 1rem;
     padding: 1rem;
+    outline: none;
 }
