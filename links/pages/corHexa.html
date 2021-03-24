@@ -5,10 +5,28 @@
     <link rel="stylesheet" href="../../links/csslink/corHexa/corHexa.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../header.css">
     <title>Cor em Hexa</title>
 </head>
 <body>
+    <header class="cima">
+        <a href="../../index.html" class="logo">Portfólio</a>
+        <ul class="navegacao">
+            <li class="head"><a href="../../index.html" class="cate">Inicio</a></li>
+            <li class="head"><a class="cate">Frontend</a></li>
+            <li class="head"><a class="cate">Backend</a></li>
+            <li class="head"><a class="cate">Jogos</a></li>
+            <li class="head"><a class="cate">Recentes</a></li>
+        </ul>
+        <div class="pesquisa">
+            <input class="pesq" type="text" placeholder="Pesquisa">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+
     <div class="container">
+        <div class="teste"></div>
         <h2>Escolha a cor: </h2>
         <input type="color" value="#dba4a4" id="colorPanel">
         <button type="button" id="btn2" onclick="myColor2()"><i class="fas fa-fill-drip"></i></button>

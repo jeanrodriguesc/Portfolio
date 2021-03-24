@@ -38,11 +38,7 @@ h2{
 #colorPanel{
     width: 100px;
     height: 70px;
-    
     outline: none;
-
-    
-    
 }
 
 /* botao click */
@@ -64,7 +60,7 @@ h2{
 
 #btn:hover{
     box-shadow: none;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 
@@ -86,7 +82,7 @@ h2{
 
 #btn2:hover{
     box-shadow: none;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 
@@ -104,3 +100,18 @@ h2{
    
 }
 
+/* .teste{
+    
+    position: absolute;
+    margin-right: -505px;
+    margin-top: -50px;
+    
+    
+  
+    
+    width: 0;
+    height: 0;
+    border-left: 86px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 20px solid blueviolet;
+} */
