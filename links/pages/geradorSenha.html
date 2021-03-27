@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="geradorSenha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+
+    <!-- gerar senhas randomicas, para cadastros. -->
+    
+    <div class="meio">
+        <div class="inputBox">  
+            <h2>Gerador de Senhas</h2>
+            <input type="text" name="" placeholder="Criador de senhas" id="password" readonly="">
+            <i class="fas fa-copy copy" onclick="copy()"></i>
+            <div id="btn" onclick="getPassword()">Gerador</div>
+        </div>
+
+        <div class="teste">
+            <h2>Teste para ver a função copiar</h2>
+            <input type="text" id="campoEscrito" placeholder="Ctrl + V">
+            <i class="fas fa-trash limpar" onclick="limpar()" ></i>
+        </div>
+    </div>
+
+
+<script src="geradorSenha.js"></script>
+</body>
+</html>
