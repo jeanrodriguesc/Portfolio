@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: #886060;
+}
+.inputBox{
+    position: relative;
+    width: 450px;
+    
+}
+
+.inputBox input{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border: 1px groove;
+    margin: 15px 0 20px;
+    background: rgba(255,255,255,1);
+    outline: none;
+    padding: 0 20px;
+    font-size: 24px;
+    letter-spacing: 4px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 4px 4px 8px rgba(255,255,255,1),
+                8px 8px 12px rgba(255,255,0,1)
+}
+.inputBox input::placeholder{
+    letter-spacing: 0px;
+}
+
+
+.inputBox #btn{
+    position: relative;
+    cursor: pointer;
+    color: rgba(255,255,255,1);
+    background: #333;
+    font-size: 24px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.inputBox #btn:hover{
+    background: rosybrown;
+}
+
+.copy{
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    cursor: pointer;
+    opacity: 0.4;
+    font-size: 25px;
+}
+
+.copy:hover{ opacity: 1;}
+
+
+#campoEscrito{
+    width: 450px;
+    height: 60px;
+    outline: none;
+    background: rgba(255,255,0,1);
+    border-radius: 8px;
+    box-shadow: inset 0 10px 20px 0 rgba(0,0,0,0.5),
+                inset  0 6px 6px 0 rgba(0,0,0,0.1);
+    font-size: 20px;
+    text-align: center;
+  
+    border:none
+}
+
+.teste{
+    position: relative;
+    width: 450px;
+}
+
+.teste .limpar{
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    cursor: pointer;
+    opacity: 0.4;
+    font-size: 25px;
+    z-index: 2;
+}
