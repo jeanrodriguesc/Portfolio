@@ -1,2 +1,7 @@
 node_modules
 .env
+
+.idea/
+node_modules/
+bash.exe.stackdump
+final/
