@@ -18,3 +18,10 @@ function toggle3(){
     const habi = document.getElementById('habi');
     habi.classList.toggle('active');
 }
+
+function toggle4(){
+    const blur = document.getElementById('blur');
+    blur.classList.toggle('active')
+    const habi2 = document.getElementById('habi2');
+    habi2.classList.toggle('active');
+}
