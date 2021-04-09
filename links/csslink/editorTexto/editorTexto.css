@@ -42,3 +42,9 @@ body{
     padding: 1rem;
     outline: none;
 }
+
+@media (max-width: 1062px) {
+    .local{
+        margin-top: 150px;
+    }
+}
