@@ -17,7 +17,8 @@ function copy(){
     document.execCommand("copy");
 }
 
-function limpar(){
-    
+
+function limpar(e){
+    return document.getElementById('campoEscrito').value = "";
 
 }
