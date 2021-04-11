@@ -20,5 +20,4 @@ function copy(){
 
 function limpar(e){
     return document.getElementById('campoEscrito').value = "";
-
 }
