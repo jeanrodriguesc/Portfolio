@@ -21,39 +21,23 @@ body{
     margin-top: -100px;
 }
 
-.peso{
-    
-    width: 150px;
-    height: 50px;
-
-    
-
-}
 #peso{
     width: 100px;
     height: 50px;
 }
-#btnPeso{
-    width: 45px;
-    height: 50px;
-}
 
-.altura{
-    width: 150px;
-    height: 50px;
-    margin-left: 50px;
-
-    
-}
 #altura{
     width: 100px;
     height: 50px;
+    margin-left: 50px;
 }
 
 #btnAltura{
     width: 45px;
     height: 50px;
+    margin-left: 50px;
 }
+
 
 #resultado{
     position: absolute;

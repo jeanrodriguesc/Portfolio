@@ -8,21 +8,17 @@
 <body>
     <div class="container">
         <div class="box">
-            <div class="peso">
-                <input type="text" id="peso" placeholder="Qual seu peso">
-                <button id="btnPeso">enviar </button>
-            </div>
-
-            <div class="altura">
-                <input type="text" id="altura" placeholder="Qual seu peso">
-                <button id="btnAltura">enviar</button>
-            </div>
+            
+                <input type="text" id="peso" placeholder="Qual seu peso" maxlength="4" onkeypress="return somenteNumeros(event)">
+                <input type="text" id="altura" placeholder="Qual sua altura" maxlength="4" onkeypress="return somenteNumeros(event)">
+                <button id="btnAltura" onclick="calcular()">enviar</button>
+           
 
             <div class="resultado" id="resultado">Resultado</div>
 
         </div>
     </div>
 
-
+<script src="../jslink/massaCorporal/massaCorporal.js"></script>
 </body>
 </html>
