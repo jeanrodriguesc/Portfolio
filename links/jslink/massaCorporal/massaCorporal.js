@@ -1,6 +1,23 @@
-var peso = document.getElementById('peso').value;
-var altura = document.getElementById('altura').value;
-resultado = document.getElementById('resultado').innerHTML;
+
+
+var btnAltura = document.getElementById('btnAltura');
+
+
+function imc(){
+    var peso = document.getElementById('peso').value;
+    var altura = document.getElementById('altura').value;
+    var resultado = document.getElementById('resultado').value;
+
+    if(peso !== '' && altura !== ''){
+        alert ('Valor')
+    } else {}
+
+
+}
+
+btnAltura.addEventListener('click', imc);
+
+
 
 function calcular() {
     var res = peso/altura
@@ -8,6 +25,13 @@ function calcular() {
     
     document.getElementById("resultado").innerHTML = `${res}`
 }
+
+
+
+
+
+
+
 
 
 //função para escrever so numeros no input
