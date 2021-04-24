@@ -11,8 +11,6 @@ function imc(){
     if(peso !== '' && altura !== ''){
         alert ('Valor')
     } else {}
-
-
 }
 
 btnAltura.addEventListener('click', imc);
