@@ -1,38 +1,42 @@
-var btnAltura = document.getElementById('btnAltura');
+const btn = document.getElementById('btn');
 
 
 function imc(){
     var peso = document.getElementById('peso').value;
     var altura = document.getElementById('altura').value;
-    var resultado = document.getElementById('resultado').value;
+    const resultado = document.getElementById('resultado');
 
     if(peso !== '' && altura !== ''){
-        const valorIMC = (peso / (altura * altura)).toFixed(1);
+        
+
+        const valorIMC = (peso / (altura * altura));
+
+
 
         let classificacao = '';
 
         if(valorIMC < 18.5){
-            classificacao = 'abaixo do peso'
-        }
+        classificacao = 'abaixo do peso';
+       }else if (valorIMC < 25) {
+        classificacao = 'Você está com o peso ideal. Parabens!' ;
+       }else if (valorIMC < 30) {
+        classificacao = 'Levemente acima do peso';
+       }else if (valorIMC < 35) {
+        classificacao = 'Você está com Obesidade grau I';
+       }else if (valorIMC < 40) {
+        classificacao = 'Você está com Obesidade grau II';
+       }else if (valorIMC < 45) {
+        classificacao = 'Você está com Obesidade grau III. Cuidado!';
+       }
 
-        resultado.texContent = `Seu UMC é ${ValorIMC} e você está ${classificacao}`;
+        resultado.innerHTML = `Seu UMC é ${valorIMC} e você está ${classificacao}`;
 
-    } else { 
-        resultado.texContent = 'preencha'
+    }else { 
+        resultado.innerHTML = 'Preencha todos os campos'
     }
 }
 
-btnAltura.addEventListener('click', imc);
-
-
-
-function calcular() {
-    var res = peso/altura
-    console.log(res)
-    
-    document.getElementById("resultado").innerHTML = `${res}`
-}
-
+btn.addEventListener('click', imc);
 
 
 
