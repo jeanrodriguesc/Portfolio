@@ -1,0 +1,1 @@
+web:npm run gulp compile && node index.js
