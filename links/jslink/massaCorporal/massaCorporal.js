@@ -29,7 +29,7 @@ function imc(){
         classificacao = 'Você está com Obesidade grau III. Cuidado!';
        }
 
-        resultado.innerHTML = `Seu UMC é ${valorIMC} e você está ${classificacao}`;
+        resultado.innerHTML = `Seu IMC é ${valorIMC} e você está ${classificacao}`;
 
     }else { 
         resultado.innerHTML = 'Preencha todos os campos'
