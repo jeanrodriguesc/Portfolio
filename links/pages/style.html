@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../header.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <header class="cima">
+        <a href="../../index.html" class="logo">Portfólio</a>
+        <ul class="navegacao">
+            <li class="head"><a href="../../index.html" class="cate">Home</a></li>
+            <li class="head"><a class="cate">Style</a></li>
+            <li class="head"><a class="cate">Funcionalidade</a></li>
+            <li class="head"><a class="cate">Games</a></li>
+            <li class="head"><a class="cate">Recentes</a></li>
+        </ul>
+        <div class="pesquisa">
+            <input class="pesq" type="text" placeholder="Pesquisa">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+       
+        <div class="container">
+            
+            <!-- Segundo -->
+            <div class="card">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Cadastro</h3>
+                    <p> Modelos de cadastros</p>
+                        <a href="cadastro.html">Saiba mais</a>
+                </div>
+            </div>
+
+            <!-- Terceiro -->
+            <div class="card">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Cartão 3D</h3>
+                    <p>Estilo vidro nos cartão, Animação feita com Vanilla.js </p>
+                        <a href="cartao3d.html">Card 3D</a>
+                </div>
+            </div>
+
+            <!-- Quarto -->
+
+            <div class="card">
+                <div class="content">
+                    <h2>04</h2>
+                    <h3>Cor em Hexa</h3>
+                    <p>Escolha uma cor e terá o resultado em Hexadecimal</p>
+                        <a href="corHexa.html">Cores</a>
+                </div>
+            </div>
+
+
+            <!-- Sétimo -->
+            <div class="card">
+                <div class="content">
+                    <h2>07</h2>
+                    <h3>Relógio</h3>
+                    <p>Estilos de Relógios.</p>
+                        <a href="relogios.html">Clock</a>
+                </div>
+            </div>
+
+
+
+        </div>   
+  
+    <script type="text/javascript" src="vanilla.js"></script>
+    <script>VanillaTilt.init(document.querySelectorAll(".card"),{
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+    })</script>
+</body>
+</html>
