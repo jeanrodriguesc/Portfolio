@@ -169,3 +169,12 @@ body
 {
     display: none;
 }
+
+.c
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 60vh;
+}
